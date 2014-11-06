@@ -1,0 +1,19 @@
+{
+  "name": "ESMNodeAppTemplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node start"
+  },
+  "dependencies": {
+    "body-parser": "~1.9.2",
+    "dateformat": "~1.0.8",
+    "express": "~4.10.0",
+    "formidable": "^1.0.15",
+    "mongodb": "~1.4.19",
+    "nconf": "~0.6.9",
+    "node-uuid": "~1.4.1",
+    "serve-favicon": "^2.1.6",
+    "socket.io": "~1.2.0"
+  }
+}

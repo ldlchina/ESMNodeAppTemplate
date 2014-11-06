@@ -1,0 +1,11 @@
+
+var app = require('./app.js');
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+require('./lib/socket')(io);
+
+app.set('port', process.env.PORT || 3000);
+
+var server = http.listen(app.get('port'), function() {
+  console.log('start at port:' + server.address().port);
+});

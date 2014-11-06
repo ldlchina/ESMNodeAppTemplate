@@ -1,0 +1,27 @@
+{
+    "build": "dev",
+    "port": "8443",
+    "secure": true,
+    "dev": {
+        "db": {
+            "host": "localhost",
+            "port": 27017,
+            "name": "mydb",
+			"collections": {
+				"FILE": "file"
+			}
+        },
+		"node_env":"development"
+    },
+	"prod":{
+        "db": {
+            "host": "localhost",
+            "port": 27017,
+            "name": "mydb",
+			"collections": {
+				"FILE": "file"
+			}
+        },
+		"node_env":"production"
+	}
+}
